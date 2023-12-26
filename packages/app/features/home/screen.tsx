@@ -33,7 +33,7 @@ export function HomeScreen() {
                 const tasksData = await tasksApiService.getTasks();
                 setTasks(tasksData);
                 setLoading(false);
-            } catch (error) {
+            } catch (error: any) {
                 console.error('Erro ao buscar tarefas:', error);
                 setLoading(false);
             }
@@ -51,7 +51,7 @@ export function HomeScreen() {
             setTasks((prevTasks) =>
                 prevTasks.map((task) => (task.id === taskId ? updatedTask : task))
             );
-        } catch (error) {
+        } catch (error: any) {
             console.error('Erro ao atualizar a tarefa:', error);
         } finally {
             setLoading(false);
@@ -64,7 +64,7 @@ export function HomeScreen() {
             try {
                 await tasksApiService.deleteTask(selectedTaskId);
                 setTasks((prevTasks) => prevTasks.filter((task) => task.id !== selectedTaskId));
-            } catch (error) {
+            } catch (error: any) {
                 console.error('Erro ao excluir a tarefa:', error);
             } finally {
                 setLoading(false);
@@ -89,7 +89,7 @@ export function HomeScreen() {
             });
             setTasks((prevTasks) => [...prevTasks, newTask]);
             setNewTaskTitle('');
-        } catch (error) {
+        } catch (error: any) {
             console.error('Erro ao criar nova tarefa:', error);
             if (error.response && error.response.status === 500) {
                 setErrorMessage('Ocorreu um erro ao criar a tarefa. Tente novamente mais tarde.');

@@ -25,7 +25,7 @@ const tasksApiService = {
         try {
             const response = await apiService.get('');
             return handleResponse(response) || [];
-        } catch (error) {
+        } catch (error: any) {
             handleError(error);
             return [];
         }
@@ -35,7 +35,7 @@ const tasksApiService = {
         try {
             const response = await apiService.post('', newTask);
             return handleResponse(response);
-        } catch (error) {
+        } catch (error: any) {
             handleError(error);
             return {} as Task;
         }
@@ -45,7 +45,7 @@ const tasksApiService = {
         try {
             const response = await apiService.patch(`/${taskId}`, updatedTask);
             return handleResponse(response);
-        } catch (error) {
+        } catch (error: any) {
             handleError(error);
             return {} as Task;
         }
@@ -55,7 +55,7 @@ const tasksApiService = {
         try {
             await apiService.delete(`/${taskId}`);
             return;
-        } catch (error) {
+        } catch (error: any) {
             handleError(error);
             return;
         }
