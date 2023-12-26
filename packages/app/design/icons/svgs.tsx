@@ -9,7 +9,7 @@ export const Check = ({ color }: { color: string }) => (
 
 export const Plus = ({ color }: { color: string }) => (
     <Svg width="64" height="32" viewBox="0 0 24 24">
-        <Path id="Vector" d="M6 12H12M12 12H18M12 12V18M12 12V6" stroke={color} stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <Path id="Vector" d="M6 12H12M12 12H18M12 12V18M12 12V6" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
     </Svg>
 );
 
