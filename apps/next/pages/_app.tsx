@@ -12,10 +12,10 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Solito Example App</title>
+        <title>Lista de Tarefas</title>
         <meta
           name="description"
-          content="Expo + Next.js with Solito. By Fernando Rojo."
+          content="Made with Solito by manzoli.dev"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
