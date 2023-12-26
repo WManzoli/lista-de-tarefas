@@ -1,6 +1,5 @@
 {
   "name": "lista-de-tarefas",
-  "version": "1.0",
   "private": true,
   "workspaces": [
     "apps/*",
@@ -27,8 +26,5 @@
     "**/expo-router",
     "**/expo-router/**"
   ],
-  "packageManager": "yarn@3.4.1",
-  "dependencies": {
-    "react-native-svg-transformer": "^1.2.0"
-  }
+  "packageManager": "yarn@3.4.1"
 }

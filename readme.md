@@ -1,6 +1,6 @@
 ## 📝 Sobre
 
-Você pode visualizar o código NextJS [aqui](https://lista-de-tarefas-eight-weld.vercel.app).<br/>
+Você pode visualizar o código NextJS [aqui](lista-de-tarefas-wmanzoli.vercel.app).<br/>
 Ou siga as instruções abaixo para executar a aplicação em sua máquina.
 
 ## 🏁 Iniciar a Aplicação
