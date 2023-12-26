@@ -202,17 +202,17 @@ export function HomeScreen() {
                                     }}
                                 >
                                     <Row style={{ padding: 10, alignItems: 'center', justifyContent: 'space-between' }}>
-                                        <View style={{ width: '25%' }}>
+                                        <View>
                                             <TouchableOpacity style={{ width: 32, height: 32, borderRadius: 5, marginRight: 10, borderWidth: 1, borderColor: '#007BFF', alignItems: 'center', justifyContent: 'center' }} onPress={() => handleTaskToggle(task.id)}>
                                                 {task.completed && (
                                                     <Check color="#007BFF"/>
                                                 )}
                                             </TouchableOpacity>
                                         </View>
-                                        <View style={{ width: '50%', flexDirection: 'row', alignItems: 'baseline' }}>
-                                            <Text style={{ fontWeight: '500', fontSize: 18, color: isDarkTheme ? '#ffffff' : '#393e4b' }}>{task.title}</Text>
+                                        <View style={{ flex: 1, width: '100%', paddingHorizontal: 25 }}>
+                                            <Text style={{ fontWeight: '500', fontSize: 18, color: isDarkTheme ? '#ffffff' : '#393e4b' }}>{ task.title }</Text>
                                         </View>
-                                        <View style={{ width: '50%', alignItems: "center", justifyContent: "flex-end", paddingRight: 25 }}>
+                                        <View style={{  alignItems: "center", justifyContent: "flex-end", paddingRight: 25 }}>
                                             <TouchableOpacity onPress={() => {
                                                 setSelectedTaskId(task.id);
                                                 setConfirmationModalVisible(true);
