@@ -172,7 +172,7 @@ export function HomeScreen() {
                         borderWidth: 1,
                         ...inputStyle,
                     }}
-                    placeholder="..."
+                    placeholder=". . ."
                     value={newTaskTitle}
                     onChangeText={(text) => setNewTaskTitle(text)}
                 />
@@ -282,7 +282,7 @@ export function HomeScreen() {
                 <View style={{ backgroundColor: 'rgba(0,0,0,0.32)', flex: 1, justifyContent: 'center', alignItems: 'center' }}>
                     <View style={{ padding: 20, backgroundColor: '#fff', borderRadius: 10, flexDirection: 'row' }}>
                         <TouchableOpacity style={{ paddingRight: 20 }} onPress={() => setErrorModalVisible(false)}>
-                            <Times color={isDarkTheme ? '#ffffff' : '#69748a'} />
+                            <Times color="#69748a" />
                         </TouchableOpacity>
                         <Text style={{ fontSize: 16 }}>{errorMessage}</Text>
                     </View>
