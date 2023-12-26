@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { View, ScrollView, TextInput, TouchableOpacity, Modal as RNModal, Alert, ActivityIndicator as Loading } from 'react-native';
+import { View, ScrollView, TextInput, TouchableOpacity, Modal as RNModal, ActivityIndicator as Loading } from 'react-native';
 import { Row } from 'app/design/layout';
 import { Task } from 'app/types/tasks';
 import { A, P, Text } from 'app/design/typography';
@@ -148,7 +148,7 @@ export function HomeScreen() {
                     </Text>
                 </View>
                 <TouchableOpacity style={{ backgroundColor: isDarkTheme ? '#222222' : '#E3E5E8FF', padding: 10, borderRadius: 5, marginLeft: 10, height: 64, alignItems: 'center', justifyContent: 'center' }}>
-                    <Text onPress={handleThemeSwitch} style={{ fontSize: 24, width: 64, textAlign: 'center', color: isDarkTheme ? '🔆' : '🌙' }}>
+                    <Text onPress={handleThemeSwitch} style={{ fontSize: 24, width: 64, textAlign: 'center' }}>
                         {isDarkTheme ? '🔆' : '🌙' }
                     </Text>
                 </TouchableOpacity>
